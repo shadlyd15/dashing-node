@@ -2,15 +2,48 @@
   "name": "dashing-node",
   "version": "1.0.0",
   "description": "A fork of dashing-js with up-to-date dependencies",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Shadly Salahuddin",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^3.1.0",
+    "coffee-script": "^1.12.7",
+    "commander": "^2.20.0 ",
+    "consolidate": "^0.15.1",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "fs-extra": "^8.1.0",
+    "jade": "^1.11.0",
+    "mincer": "^2.0.0",
+    "node-sass": "^4.12.0",
+    "node-schedule": "^1.3.2",
+    "prompt": "^1.0.0",
+    "request": "^2.88.0",
+    "uglify-js": "^3.6.0",
+    "walker": "^1.0.3",
+    "winston": "^3.2.1"
   },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "should": "*"
+  },
+  "keywords": [
+    "dashing",
+    "dashboard",
+    "web"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shadlyd15/dashing-node.git"
   },
-  "author": "Shadly Salahuddin",
+  "main": "index",
+  "bin": {
+    "dashing-node": "./bin/dashing-node"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "engine": "node >= 0.10",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shadlyd15/dashing-node/issues"
